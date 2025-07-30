@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap');/* site name font*/
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');/*rest of the site font*/
+
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Oswald', sans-serif;
+}
+/*Header styling**************/
+.navbar {
+    background-color: #00316e;
+    color: white;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 25px;
+}
+.navbar-content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+.name {
+    color: #ffcc00;
+    font-size: 38px;
+    font-family: 'Libre Baskerville', serif;
+    margin-bottom: 16px;
+    text-align: center;
+    cursor: pointer;
+}
+.name:hover {
+        color: white;/*change the color of the name when cursor is on it*/
+    }
+.nav-links {
+    display: flex;
+    list-style: none;/*remove the dots*/
+    gap: 120px; 
+    padding-top: 20px;
+}
+.nav-links a {
+    text-decoration: none;/*remove the underline*/
+    color: white;
+}
+.nav-links a:hover {
+    text-decoration: underline;
+    color: #ffcc00;
+}
+/*End of Header styling************************/
+.news-card {
+    width: 400px;
+    background-color: white;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    overflow: hidden;/*to prevent the words from going out of the box border*/
+    margin: 20px;
+    transition: transform 0.3s ease;
+    cursor: pointer;
+}
+
+.news-card:hover {
+    transform: translate(0px, -5px);/*to make the card move on the y axis*/
+}
+
+.card-img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;/*fill the image in the box without stretching*/ 
+}
+
+.card-content {
+    padding: 20px;
+}
+
+.tag {
+    display: inline-block;
+    background-color: #eee;
+    color: #444;
+    padding: 5px 10px;
+    font-size: 12px;
+    border-radius: 20px;
+    margin-bottom: 10px;
+}
+
+.card-title {
+    font-size: 18px;
+    font-weight: bold;/*bold the title*/
+    margin: 10px 0;
+}
+
+.card-info {
+    font-size: 12px;
+    color: gray;
+    display: flex;
+    gap: 15px;
+    margin-bottom: 12px;
+}
+
+.card-desc {
+    font-size: 14px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.read-more {
+    color: #007BFF;
+    text-decoration: none;
+    font-weight: bold;/*make the read more text bold*/
+    font-size: 14px;
+}
+.read-more:hover {
+    text-decoration: underline;/*underline the read more when crusor is on it*/
+}
+.card-container {
+    display: flex;
+    gap: 20px;
+    justify-content: center; /* Center the whole group */
+    flex-wrap: wrap;
+    padding: 40px;
+}
+.card-meta {
+    font-size: 12px;
+    color: gray;
+    display: flex;
+    gap: 15px;
+    margin-bottom: 12px;
+}
